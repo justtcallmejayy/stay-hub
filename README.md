@@ -1,4 +1,4 @@
-# 🏡 Project-Airbnb
+# 🏡 Project-StayHub
 
 A full-stack web application inspired by Airbnb that allows users to browse, list, and explore rental properties. Built with Node.js, Express, MongoDB, and Mongoose.
 
