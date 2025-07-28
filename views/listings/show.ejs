@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= listing.title %> - StayHub</title>
+  </head>
+  <body>
+    <h1><%= listing.title %></h1>
+    <p><%= listing.description %></p>
+    <p>Price: $<%= listing.price.toLocaleString("en-IN") %></p>
+    <p>Location: <%= listing.location %></p>
+    <img src="<%= listing.images %>" alt="<%= listing.title %>" />
+  </body>
+</html>
