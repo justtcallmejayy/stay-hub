@@ -11,5 +11,14 @@
     <p>Price: $<%= listing.price.toLocaleString("en-IN") %></p>
     <p>Location: <%= listing.location %></p>
     <img src="<%= listing.images %>" alt="<%= listing.title %>" />
+    <br />
+
+    <a href="/listings/<%= listing._id %>/edit">Edit Listing</a>
+    <form action="/listings/<%= listing._id %>?_method=DELETE" method="post">
+      <button type="submit">Delete Listing</button>
+    </form>
+    <br />
+    <a href="/listings">Back to Listings</a>
+    <br />
   </body>
 </html>

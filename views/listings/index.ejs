@@ -7,6 +7,11 @@
   </head>
   <body>
     <h1>All Listings</h1>
+    <p>Welcome to StayHub! Here are all the available listings:</p>
+    <form action="/listings/new" method="get">
+      <button type="submit">Create New Listing</button>
+    </form>
+    <br />
     <ul>
       <% alllistings.forEach(function(listing) { %>
       <li>
