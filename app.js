@@ -4,14 +4,16 @@ const mongoose = require("mongoose");
 const Listing = require("./models/listing");
 const path = require("path");
 const methodOverride = require("method-override");
+const ejsMate = require("ejs-mate");
 const port = 3000;
 
 // Set up EJS as the templating engine
+app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 // Middleware to serve static files
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "./public"))); // Middleware for using static files such as css and js
 app.use(methodOverride("_method"));
 
 // MongoDB connection
