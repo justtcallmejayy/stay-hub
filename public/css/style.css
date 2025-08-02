@@ -1,0 +1,52 @@
+/* Styling for my webpage - jay */
+/* general styles */
+
+/* styling for navbar */
+.navbar {
+  background-color: #ffffff;
+  height: 5rem;
+}
+
+.fa-house-chimney {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* styling for footer */
+.f-info {
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  text-align: center;
+}
+.f-info-links a {
+  color: #222222;
+  text-decoration: none;
+}
+.f-info-links a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials {
+  width: 100%;
+}
+
+.f-info-socials i {
+  font-size: 1.9rem;
+  margin-right: 1rem;
+}
