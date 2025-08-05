@@ -2,19 +2,35 @@
 <body>
   <h1>All Listings</h1>
   <p>Welcome to StayHub! Here are all the available listings:</p>
-  <!--   <form action="/listings/new" method="get">
+  <!-- <form action="/listings/new" method="get">
     <button type="submit">Create New Listing</button>
   </form> -->
+
   <br />
-  <ul>
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
     <% alllistings.forEach(function(listing) { %>
-    <li>
-      <h2><a href="/listings/<%= listing._id %>"><%= listing.title %></a></h2>
-      <p><%= listing.description %></p>
-      <p>Price: $<%= listing.price.toLocaleString("en-IN") %></p>
-      <p>Location: <%= listing.location %></p>
-      <img src="<%= listing.images %>" alt="<%= listing.title %>" />
-    </li>
+    <a href="/listings/<%= listing._id %>">
+      <div class="card col">
+        <img
+          src="<%= listing.images %>"
+          class="card-img-top"
+          alt="<%= listing.title %>"
+          loading="lazy"
+          style="height: 20rem"
+          title="<%= listing.title %>"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            <strong><%= listing.title %></strong>
+          </p>
+          <p>Price: $<%= listing.price.toLocaleString("en-IN") %> /night</p>
+          <!--         <p>Location: <%= listing.location %></p>
+        <a href="/listings/<%= listing._id %>" class="btn btn-primary"
+          >View Listing</a
+        > -->
+        </div>
+      </div>
+    </a>
     <% }); %>
-  </ul>
+  </div>
 </body>

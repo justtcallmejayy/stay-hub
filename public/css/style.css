@@ -1,16 +1,21 @@
-/* Styling for my webpage - jay */
-/* general styles */
+/* General styles */
+body {
+  background-color: #f8f9fa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+}
 
-/* styling for navbar */
+/* Navbar */
 .navbar {
   background-color: #ffffff;
   height: 5rem;
 }
 
-.fa-house-chimney {
+.fa-airbnb {
   color: #fe424d;
   font-size: 2rem;
 }
+
 .nav-link {
   color: #222222 !important;
 }
@@ -23,30 +28,57 @@
   color: #007bff;
 }
 
-/* styling for footer */
+/* Footer */
 .f-info {
   height: 8rem;
   background-color: #ebebeb;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: space-evenly;
+  align-items: center;
   text-align: center;
 }
+
 .f-info-links a {
   color: #222222;
   text-decoration: none;
 }
+
 .f-info-links a:hover {
   color: #007bff;
   text-decoration: underline;
 }
 
-.f-info-links, .f-info-socials {
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .f-info-socials i {
-  font-size: 1.9rem;
+  font-size: 1.2rem;
   margin-right: 1rem;
+}
+
+/* Cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+.card-text {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
