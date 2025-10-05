@@ -82,3 +82,33 @@ body {
   font-size: 1.1rem;
   margin: 0.5rem 0;
 }
+
+.listing-link {
+  text-decoration: none;
+  color: #222222;
+}
+
+/* CARD EFFECTS */
+/* .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card-img-top {
+  filter: brightness(80%);
+  transition: filter 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  filter: brightness(100%);
+}
+ */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+  transition: opacity 0.3s ease;
+}
