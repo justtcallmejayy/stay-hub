@@ -112,3 +112,15 @@ body {
   background-color: white;
   transition: opacity 0.3s ease;
 }
+
+/* Show image */
+.show-image {
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btns{
+  display: flex;
+}
